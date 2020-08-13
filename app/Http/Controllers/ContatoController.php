@@ -6,8 +6,12 @@ use Illuminate\Http\Request;
 
 class ContatoController extends Controller {
     public function index(Request $request) {
-        dd($request);
-        return 'Index contato';
+        $contatos = [
+            (object)['nome' => "Maria", 'telefone' => '0000-0000'],
+            (object)['nome' => "João", 'telefone' => '1111-1111'],
+            (object)['nome' => "Joana", 'telefone' => '2222-2222'],
+        ];
+        return view('contato.index', compact('contatos'));
     }
 
     public function create() {
