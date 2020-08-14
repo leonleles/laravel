@@ -8,7 +8,7 @@ class Contato extends Model
 {
     public function index() {
         return (object)[
-            'nome' => 'Leonardo Leles',
+            'nome' => 'Leonardo Leles-',
             'tel' => '0000-0000'
         ];
     }
