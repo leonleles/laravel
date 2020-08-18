@@ -24,7 +24,7 @@
                         <td>{{$registro->titulo}}</td>
                         <td>{{$registro->descricao}}</td>
                         <td>
-                            <img width="120px" src="{{asset($registro->imagem)}}" alt="{{$registro->titulo}}">
+                            <img width="50px" src="{{asset($registro->imagem)}}" alt="{{$registro->titulo}}">
                         </td>
                         <td>{{$registro->publicado}}</td>
                         <td>
